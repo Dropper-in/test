@@ -1,0 +1,210 @@
+* {margin: 0; padding: 0;} 
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    background-image: url(assets/main_top_pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100%;
+    }
+    #section{
+        margin: 10px auto;
+        width: 1200px;
+        height:1500px;
+        display: flex;
+    }
+    
+.nav{ /*네비게이션*/
+    background-color: #C59372;
+    height: 70px;
+    padding-top: 25px;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    z-index: -1;
+}
+.scroll-y {overflow-y: scroll;}
+
+#main_top_pic{
+        margin-top: 70px;
+        position: absolute;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 1080px;
+        z-index: 0;
+}
+.main_top{
+    margin: 0 auto;
+}
+
+.main_top .nav #logo{ /*네비게이션 로고*/
+    position: relative;
+    width: 125px;
+    height: 25px;
+
+}
+
+.nav #nav_name{  /*네비게이션*/
+    text-decoration: none;
+    position: relative;
+    color: #F8F2ED;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main_top .nav #nav_name::after{ /*네비게이션 호버*/
+    content: "";
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+    left: 50;
+    transform: translateX(-100%);
+    width: 0;
+    height: 2px;
+    background-color: #F8F2ED;
+    transition: all .2s ease-out;
+}
+
+.main_top .nav #nav_name:hover::after{ /*네비게이션 호버2*/
+    width: 100%;
+}
+
+#main_info{
+    font-size: 3em;
+    color: #F8F2ED;
+}
+
+.main_left{
+    width:70%;
+    z-index: 1;   
+    margin-top: 50px;
+}
+
+.main_left #message{
+    margin-top: 150px;
+}
+
+.main_right{
+    background-color: rgba(184,137,107,0.8);
+    border-radius: 30px;
+    margin-right: 0;
+    margin-top: 100px;
+    width: 500px;
+    height: 625px;
+    z-index: 1;    
+    position: relative;
+}
+
+.main_right #login_logo{ /*로그인 로고*/
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    top:104px;
+    left: 90px;
+}
+input{
+    width: 265px;
+}
+.input_form{
+    font-size: 11pt;
+    top: 196px;
+    left:75px;
+    width: 285px;
+    height: 300px;
+}
+.wide{
+    height: 45px;
+    margin: 0 10px;
+    outline: none;
+    border: none;
+    background: none;
+}
+.id_input{
+    width: 285px;
+	height :45px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 3px 6;
+    margin-bottom: 27px;
+    background-color: #F8F2ED;
+}
+.pw_input{
+    width: 285px;
+	height :45px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 3px 6;
+    background-color: #F8F2ED;
+}
+#pw{
+    width: 285px;
+	height :45px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 3px 6;
+}
+
+input::placeholder {
+    color: #C59372;
+    font-size: 11pt;
+}
+a {
+    text-decoration: none;color: #F8F2ED;
+}
+.find_idpw{    
+    color: #F8F2ED;
+    float:right;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+.input_form{
+    width: 285px;
+    height: 285px;
+    position: relative;
+    float:left;
+}
+/**/.button{
+    -webkit-transition: all 0.2s ease-in-out; 
+    -moz-transition: all 0.2s ease-in-out; 
+    -o-transition: all 0.2s ease-in-out; 
+    transition: all 0.2s ease-in-out;
+	display: block;
+    width: 285px;
+	height :55px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 3px 6;
+    text-align: center;
+    cursor: pointer;
+}
+#login_btn{
+    margin-top: 12px;
+    width: 285px;
+    height:55px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6;
+    background-color: #60422F;
+    color: #f1efec;
+    font-size: 22px;
+}
+#signin_btn{
+    margin-top: 12px;
+    width: 285px;
+    height:55px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6;
+    background-color: #E3CEBC;
+    color: #77553e;
+    font-size: 22px;
+}
+#login_btn:hover{
+	box-shadow: #503524 0 0px 0px 100px inset;
+    color : #ffffff;
+}
+#signin_btn:hover{
+	box-shadow: #ecded2 0 0px 0px 100px inset;
+    color : #60422F;
+}
+

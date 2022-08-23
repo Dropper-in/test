@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/sign-in.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="js/capsLock.js"></script>
+    <script src="js/postcode.js"></script>
+    <script src="js/checkAll.js"></script>
+    <title>READYCLE : 회원가입</title>
+</head>
+<body>
+    <div id="mainbox">
+        <a href="http://readycle.dothome.co.kr/"><img src="assets/logo.png" alt="로고" id="signin_logo"></a>
+        <div class="input_form">
+            <form name=form method="post" action="http://readycle.dothome.co.kr/" onsubmit="return checkAll()" >            
+            <div class="box"><input class ="wide" placeholder="이름" type="text" name="name" autocomplete="off" required minlength="2" maxlength="16"></div>
+            <div class="box"><input class ="wide" placeholder="아이디" type="text" name="id" autocomplete="off" required minlength="8" maxlength="16"></div>
+            
+            <div class="box1"><input class ="wide" placeholder="비밀번호" type="password" name="pw" autocomplete="off" required value="" onkeypress="javascript:capsLock(event);" minlength="8" maxlength="16"></div>
+            <div class="box2"><input class ="wide" placeholder="비밀번호 확인" type="password" name="pwck" autocomplete="off" required value="" onkeypress="javascript:capsLock(event);" minlength="8" maxlength="16"></div>
+            <div class="box">
+                <table>
+                    <tr>
+                        <td><select name="num">
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="018">018</option>                
+                        </select></td><td><span>-</span></td>
+                    <td><input type="tel" id="num2" autocomplete="off" required maxlength="4"></td><td><span>-</span></td>
+                    <td><input type="tel" id="num3" autocomplete="off" required maxlength="4"></td></tr></table></div>
+
+            <div><div class="boxp"><input type="text" name="postcode" id="sample6_postcode" placeholder="우편번호" readonly></div>
+            <div class="btn boxb"><input id ="btns" type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"></div></div>
+            <div class="box1"><input class ="wide" type="text" name="Address" id="sample6_address" placeholder="주소" readonly></div>
+            <div class="boxm"><input class ="wide" type="text" name="AddressD" id="sample6_detailAddress" placeholder="상세주소" autocomplete="off" minlength="1"></div>
+            <div class="box2"><input class ="wide" type="text" id="sample6_extraAddress" placeholder="참고항목" readonly></div>
+
+            <div class="box"><input class ="wide" type="text" placeholder="이메일 (비밀번호 찾기 시 필요)" name="email" id="email" autocomplete="off" required></div>
+            <div class="box"><input class="wide" type="text" placeholder="생년월일 (YYYYMMDD)" name="birth" id="birth" autocomplete="off" required maxlength="8" minlength="8"></div>
+            <div class="btn box"><input class="submit" type="submit" value="회원가입"></div>
+        </div>
+    </form>
+    </div>
+    <script>
+        </script>
+</body>
+</html>

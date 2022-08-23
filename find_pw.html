@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/log-in.css" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+<script src="js/capsLock.js"></script>
+<html>
+	<head>
+		<title>READYCLE : 비밀번호 찾기</title>
+	</head>
+	<body>		
+        <img src="assets/main_top_pic.jpg" alt="메인" id="main_top_pic">
+		<div class="main_top">
+			<nav class="nav">
+                <a href="http://readycle.dothome.co.kr/">
+                <img src="assets/logo.png" alt="로고" id="logo">
+                </a>
+                <a href="#" id="nav_name">로그인/회원가입</a>
+                <a href="#" id="nav_name">마이페이지</a>
+                <a href="#" id="nav_name">구독서비스</a>
+                <a href="#" id="nav_name">고객센터</a>
+            </nav>
+		</div>
+        <div class="main" id="section">
+            <div class="main_left">
+                <div id=message>
+                    <h1 id="main_info">READYCLE : </h1><h2 id="main_info">비밀번호를 분실하셨나요?<br>가입 시 입력한 이메일 주소로<br>임시비밀번호를 발급해 드립니다.</h2>
+                </div>
+            </div>
+            <div class="main_right">
+                    <a href="http://readycle.dothome.co.kr/"><img src="assets/logo.png" alt="로고" id="login_logo"></a>
+                    <div class="input_form">
+                        <form>
+                            <div class="id_input"><input class ="wide" placeholder="이름" type="text" name="name" autocomplete="off" required minlength="2" maxlength="16"></div>
+                            <div class="id_input"><input class ="wide" placeholder="아이디" type="text" name="id" autocomplete="off" required minlength="8" maxlength="16"></div>
+                            <div class="id_input"><input class ="wide" placeholder="가입 시 입력한 이메일" type="text" name="email" autocomplete="off" maxlength="40"></div>
+                        <div id="buttons">
+                                <input type=button class="button" id="login_btn" value="비밀번호 찾기" onclick="alert('입력하신 이메일로 임시 비밀번호가 발급되었습니다.\n메일함을 확인하시고 로그인하시기 바랍니다.');">
+                                <input type="button" class="button" id="signin_btn" value="로그인" onclick="location.href='log-in.html'"></div>
+                        </div>
+                    </form>                
+                </div>
+            </div>
+        </div>
+	</body>
+	<footer></footer>
+</html>

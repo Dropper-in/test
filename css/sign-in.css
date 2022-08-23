@@ -1,0 +1,158 @@
+        body{
+        font-family: 'Noto Sans KR', sans-serif;
+        background-image: url(assets/signin-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+        height: 100%;
+        }
+        #mainbox{
+            width: 80%;
+            height: 825px;
+            background-color:rgba(230,185,160,0.25);
+            margin: 0 auto;
+            margin-top: 70px;
+            border-radius: 40px;
+        }
+        #signin_logo{
+            display: block;
+            width: 400px;
+            height: 80px;
+            padding-top: 40px;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+        .input_form{
+            overflow: hidden;
+            margin:0 auto;
+            padding-top: 10px;
+            width: 302px;
+            height: 700px;
+        }
+        .box{
+            width: 300px;
+            display: inline-block;
+            border: 1px solid #B27F5D; 
+            border-radius: 7px;
+            background-color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+        .box1{
+            width: 300px;
+            display: inline-block;
+            border: 1px solid #B27F5D; 
+            border-radius: 7px 7px 0 0;
+            background-color: #FFFFFF;
+        }
+        .box2{
+            width: 300px;
+            display: inline-block;
+            border: 1px solid #B27F5D; 
+            border-radius: 0px 0px 7px 7px;
+            background-color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+        .boxn{
+            width: 300px;
+            display: inline-block;
+            border: 1px solid #B27F5D; 
+            border-radius: 7px;
+            background-color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+        .boxm{            
+            width: 300px;
+            display: inline-block;
+            border: 1px solid #B27F5D;
+            background-color: #FFFFFF;
+        }
+        .boxb{
+            display: inline-block;
+            border-radius: 7px;
+            color: #FFFFFF;
+            cursor: pointer;
+            width: 116px;
+        }        
+        
+        #btns {
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+
+        .boxp{            
+            width: 155px;
+            display: inline-block;
+            border: 1px solid #B27F5D; 
+            border-radius: 7px;
+            background-color: #FFFFFF;
+            margin-bottom: 10px;
+            margin-right:23px;
+        }
+        .btn{
+            -webkit-transition: all 0.2s ease-in-out; 
+            -moz-transition: all 0.2s ease-in-out; 
+            -o-transition: all 0.2s ease-in-out; 
+            transition: all 0.2s ease-in-out;
+            background-color: #B68869;
+            text-align: center;
+            font-style: bold;
+            color: #FFFFFF;
+            border: 1px solid #B68869;
+        }
+        .btn:hover{
+            background-color: #9b6f52;
+            color: #FFFFFF;
+            border: 1px solid #91684c;
+        }
+        
+        input{
+            height: 40px;
+            outline: none;
+            border: none;
+            background: none;
+            margin-left: 8px;
+            margin-right: 10px;
+            color: rgb(120, 90, 70);
+        }
+        .submit{
+            color: #FFFFFF;
+            width: 278px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .placeholder{
+            color: rgb(130, 110, 100);
+        }
+        select{            
+            height: 35px;
+            width: 70px;
+            margin: 0 9px;
+            background: none;
+            outline: none;
+            border: none;
+            color: #B68869;
+            cursor: pointer;
+        }
+        #num2,#num3{
+            width: 70px;
+            outline: none;
+            border: none;
+            background: none;
+        }
+        #year{
+            width: 50px; 
+            outline: none;
+            border: none;
+            background: none;
+        }
+        #sample6_postcode{
+            width: 80px;
+            line-height: 40px;
+        }
+        table{
+            width: 100%;
+        }
+        .wide{
+            width:278px;
+        }

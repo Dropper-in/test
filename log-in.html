@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/log-in.css" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+<script src="js/capsLock.js"></script>
+<html>
+	<head>
+		<title>READYCLE : 로그인</title>
+	</head>
+	<body>		
+        <img src="assets/main_top_pic.jpg" alt="메인" id="main_top_pic">
+		<div class="main_top">
+			<nav class="nav">
+                <a href="http://readycle.dothome.co.kr/">
+                <img src="assets/logo.png" alt="로고" id="logo">
+                </a>
+                <a href="#" id="nav_name">로그인/회원가입</a>
+                <a href="#" id="nav_name">마이페이지</a>
+                <a href="#" id="nav_name">구독서비스</a>
+                <a href="#" id="nav_name">고객센터</a>
+            </nav>
+		</div>
+        <div class="main" id="section">
+            <div class="main_left">
+                <div id=message>
+                    <h1 id="main_info">원하는 날짜에<br>우리 집으로 찾아오는<br>이달의 책 구독, READYCLE</h1>
+                </div>
+            </div>
+            <div class="main_right">
+                    <a href="http://readycle.dothome.co.kr/"><img src="assets/logo.png" alt="로고" id="login_logo"></a>
+                    <div class="input_form">
+                        <form method="post" action="http://readycle.dothome.co.kr/">
+                            <div class="id_input"><input class ="wide" placeholder="아이디" type="text" name="id" autocomplete="off" required minlength="8" maxlength="16"></div>
+            
+                            <div class="pw_input"><input class ="wide" placeholder="비밀번호" type="password" name="pw" autocomplete="off" required value="" onkeypress="javascript:capsLock(event);" minlength="8" maxlength="16"></div>
+                        
+                        <div class="find_idpw">
+                            <p><a href="find_id.html">아이디 찾기</a>
+                            |
+                            <a href="find_pw.html">비밀번호 찾기</a></p>
+                        </div>
+                        <div id="buttons">
+                                <input type=submit class="button" id="login_btn" value="로그인">
+                                <input type="button" class="button" id="signin_btn" value="회원가입" onclick="location.href='sign-in.html'">
+                        </div>
+                    </form>                
+                </div>
+            </div>
+        </div>
+	</body>
+	<footer></footer>
+</html>
